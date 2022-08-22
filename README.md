@@ -8,7 +8,7 @@ mi segundo intento de ahuyentar de forma not-letal (mi coche muchas veces vive e
 
 - "imita" el aleteo de un pájaro
 - emite sonidos (mp3)
-- solar (queda probar en dias nublados , en autonomia deberia dar para 4 dias)
+- solar (queda probar en dias nublados , en autonomia deberia dar para 4 dias sin luz)
 - tiene un timón para que el búho gire según la dirección de el viento
 - queda probar si es waterproof , uso una junta de un filamento de tpu de 1.75mm pegada con cyano, la electronica descansa sobre una esponja
 

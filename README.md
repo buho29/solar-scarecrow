@@ -31,15 +31,14 @@ https://github.com/me-no-dev/arduino-esp32fs-plugin
 
 ```mermaid
 flowchart  TD  
- A[Start]  -->  B{Es de dia?}  
- B  -- No -->  H[Duerme 10min]  
- B  -- Si --> E[Inicio]
- E --> D{El contador es un numero Par?}
- D -- Si --> F[Inicia audio+motor]
- D -- No --> G[Inicia solo motor]
- F --> H 
- G --> H
- H --> B
+ A[Inicio]  -->  B{Es de dia?}  
+ B  -- No --> C[Duerme 10min]  
+ B  -- Si --> E{El contador es un numero Par?}
+ E -- Si --> F[10seg audio+motor]
+ E -- No --> G[10seg solo motor]
+ F --> C
+ G --> C
+ C --> B
 ```
 ## Variables
 

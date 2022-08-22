@@ -1,29 +1,59 @@
+
 # Espantapajaros/Solar scarecrow
 
-Hi! con mi eterna pelea con los pájaros de forma not-letal (mi coche muchas veces vive fuera) para desanimar a usar nuestra huerta de buffet-free
+Hi! con mi eterna pelea con los pájaros de forma not-letal (mi coche muchas veces vive en la calle) para desanimar a usar nuestra huerta de buffet-free
 
 *Read this in other languages: [English](README.en.md)
 
 # Hardware
 
-no es la mejor selección de los materiales pero la presión de mi madre en usar métodos letales, use lo que tenia en casa 
+no es la mejor selección de los materiales pero la presión de mi madre en que haga "algo" , las prisas no son buenas consejeras
 
-uso stepup para alimentar el esp32 que sube el voltaje 4.2v a 6v , en sleep el consumo es considerable 18ma (*24h)
+## Suministro electrico
 
-los motores son de 6v
 
-las 2 placas en paralelo bajo el sol me da unos 120ma/h 
-cargo las baterias con un 
+- Uso un stepup para alimentar el esp32 y los motores con 6v
+el stepup sube el voltaje 4.2v de las baterias a 6v , con el esp32 en modo sleep (ahoro) el consumo es considerable 18ma (*24h)
 
-mido la corriente de las placas solares con una divisor de tension ()
+- Las 2 placas solares en paralelo bajo el sol me da unos 120ma/h 
+- Cargo las baterias con un tp4056 , necesitas baterías con protección de bajo voltaje , los bms habría sido mejor una mejor elección
 
-# harduino
+- Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v)
 
-Hay que subir los mp3
+# Arduino
 
+- Hay que subir el directorio /Data al Spiff del esp32, contiene los *.mp3, se puede poner lo que quieras hasta 1.5mb (reggaton???)
 https://github.com/me-no-dev/arduino-esp32fs-plugin
 
-# Lista de la compra
+## Funcionamiento
+
+```mermaid
+flowchart  TD  
+ A[Start]  -->  B{Es de dia?}  
+ B  -- No -->  H[Duerme 10min]  
+ B  -- Yes --> E[Inicio]
+ E --> D{El contador es un numero Par?}
+ D -- Yes --> F[Inicia audio+motor]
+ D -- No --> G[Inicia solo motor]
+ F --> H 
+ G --> H
+ H --> B
+```
+## Variables
+
+```c++
+// config
+const int timeSleep = 60 * 10  * uS_TO_S_FACTOR;// cuando acabe lo mandamos al modo sleep (ahoro de bateria) 10min 
+const int timeRunning = 10 * 1000; // el tiempo que funciona 
+const float volume = 1.5;// el volumen de el audio (max 3.99)
+const float minVoltage = 0.5; //si el voltage es menor lo mandamos al sleep (se supone que es de noche)
+int _speed = 255; // velocidad del motor (0-255)
+
+```
+### 
+
+
+## Lista de la compra
 
 > **Nota:** no tengo nada que ver con el vendedor, son los enlaces de mi compra.
 
@@ -59,9 +89,9 @@ https://a.aliexpress.com/_vYtC43
 
 2x Battery 18650 with protection
 
-Other
+###Other
 
-2x 606ZZ 6x17x6mm (gears)
+- 2x 606ZZ 6x17x6mm (gears)
 https://www.aliexpress.com/item/1005001826957482.html
 
 2 x 608ZZ 8x22x7mm (rudder)

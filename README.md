@@ -25,6 +25,10 @@ Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v
 
 ![circuit](doc/bird1_bb.jpg)
 
+![circuit](doc/bird1_pcb.jpg)
+
+> **Nota:** los ficheros fuentes estan [/electro](/electro).
+
 ## Arduino
 
 - Hay que subir el directorio /Data al Spiff del esp32, contiene los *.mp3, se puede poner lo que quieras hasta 1.5mb (reggaton???)

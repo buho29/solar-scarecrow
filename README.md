@@ -6,9 +6,19 @@ mi segundo intento de ahuyentar de forma not-letal (mi coche muchas veces vive e
 
 *Read this in other languages: [English](README.en.md)
 
+# Ficheros 3D
+
+los ficheros para imprimir estan en [/stl](/stl).
+
+![stl](doc/doc/bird-exp1.jpg)
+
+![stl](doc/body-exp.jpg)
+
+> **Nota:** los ficheros fuentes de Solidworks 2018 3D estan [/solidworks](/solidworks).
+
 # Hardware
 
-Posiblemente no sea la mejor selección de los materiales pero la desesperación de mi madre en que haga "algo"...
+Posiblemente no sea la mejor selección de los materiales...
 
 ## Suministro electrico
 
@@ -27,7 +37,7 @@ Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v
 
 ![circuit](doc/bird1_pcb.jpg)
 
-> **Nota:** los ficheros fuentes estan [/electro](/electro).
+> **Nota:** los ficheros fuentes de fritzing estan [/electro](/electro).
 
 ## Arduino
 

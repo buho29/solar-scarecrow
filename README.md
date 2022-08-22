@@ -1,7 +1,7 @@
 
-# Espantapajaros/Solar scarecrow
+# Espantapájaros Solar
 
-Hi! con mi eterna pelea con los pájaros de forma not-letal (mi coche muchas veces vive en la calle) para desanimar a usar nuestra huerta de buffet-free
+Hola!  con mi eterna pelea con los pájaros de forma not-letal (mi coche muchas veces vive en la calle) para desanimar a usar nuestra huerta de buffet-free
 
 *Read this in other languages: [English](README.en.md)
 
@@ -10,7 +10,6 @@ Hi! con mi eterna pelea con los pájaros de forma not-letal (mi coche muchas vec
 no es la mejor selección de los materiales pero la presión de mi madre en que haga "algo" , las prisas no son buenas consejeras
 
 ## Suministro electrico
-
 
 Uso un stepup para alimentar el esp32 y los motores con 6v
 el stepup sube el voltaje 4.2v de las baterias a 6v , con el esp32 en modo sleep (ahoro) el consumo es considerable 18ma (*24h)
@@ -37,7 +36,7 @@ flowchart  TD
  B  -- Si --> E[Inicio]
  E --> D{El contador es un numero Par?}
  D -- Si --> F[Inicia audio+motor]
- D -- Si--> G[Inicia solo motor]
+ D -- No --> G[Inicia solo motor]
  F --> H 
  G --> H
  H --> B
@@ -96,7 +95,7 @@ https://a.aliexpress.com/_vYtC43
 
 2x Battery 18650 with protection
 
-###Other
+### Other
 
 - 2x 606ZZ 6x17x6mm (gears)
 https://www.aliexpress.com/item/1005001826957482.html
@@ -110,13 +109,10 @@ https://www.aliexpress.com/item/1005002336941795.html
 18 x Screw M3 x 12mm
 https://www.banggood.com/M3-Bolts-Stainless-Steel-Screws-Button-Head-Socket-Cap-10-Size-p-952124.html
 
-Tools
-drill bit :
+### Tools
+#### drill bit :
 
- 3mm(better 3.1) 
- 
- 2.8mm (thread) 
- 
- 2mm
- 
- 1.6mm (thread)
+- 3mm(better 3.1) 
+- 2.8mm (thread) 
+- 2mm
+- 1.6mm (thread)

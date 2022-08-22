@@ -162,10 +162,9 @@ https://www.banggood.com/M3-Bolts-Stainless-Steel-Screws-Button-Head-Socket-Cap-
 ![gallery](doc/IMG_20220809_170512_edit_60692333936571.jpg)
 ![gallery](doc/IMG_20220809_194153.jpg)
 ![gallery](doc/IMG_20220805_220231_edit_27645458176510.jpg)
-![gallery](doc/support print3d.png)
 ![gallery](doc/pcb.png)
 ![gallery](doc/IMG_20220813_211106.jpg)
 ![gallery](doc/IMG_20220804_112254.jpg)
-![gallery](doc/support print3d.png)
+![gallery](doc/support%20print3d.png)
 ![gallery](doc/IMG_20220802_185002.jpg)
 

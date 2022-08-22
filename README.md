@@ -5,12 +5,17 @@ Para desanimar a los pájaros a usar nuestra huerta como un restaurante buffet-f
 mi segundo intento de ahuyentar de forma not-letal (mi coche muchas veces vive en la calle)
 
 
-![stl](doc/IMG_20220813_203412_edit_273849677569671.jpg)
+![final](doc/IMG_20220813_203412_edit_273849677569671.jpg)
+
+
+
+https://user-images.githubusercontent.com/47985666/186021702-38a5164b-d2b8-40fa-a175-db5c7b3ff85f.mp4
+
+
 
 *Read this in other languages: [English](README.en.md)
 
 # Ficheros 3D
-
 
 https://user-images.githubusercontent.com/47985666/186019331-49d15a59-9388-4942-bd01-0e9cbd2d4d04.mp4
 

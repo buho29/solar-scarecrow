@@ -1,13 +1,14 @@
-
 # Espantapájaros Solar
 
-Hola!  con mi eterna pelea con los pájaros de forma not-letal (mi coche muchas veces vive en la calle) para desanimar a usar nuestra huerta de buffet-free
+Hola!   
+Para desanimar a los pájaros a usar nuestra huerta como un restaurante buffet-free
+mi segundo intento de ahuyentar de forma not-letal (mi coche muchas veces vive en la calle)
 
 *Read this in other languages: [English](README.en.md)
 
 # Hardware
 
-no es la mejor selección de los materiales pero la presión de mi madre en que haga "algo" , las prisas no son buenas consejeras
+Posiblemente no sea la mejor selección de los materiales pero la desesperación de mi madre en que haga "algo"...
 
 ## Suministro electrico
 
@@ -15,19 +16,25 @@ Uso un stepup para alimentar el esp32 y los motores con 6v
 el stepup sube el voltaje 4.2v de las baterias a 6v , con el esp32 en modo sleep (ahoro) el consumo es considerable 18ma (*24h)
 
 Las 2 placas solares en paralelo bajo el sol me da unos 120ma/h 
+
 Cargo las baterias con un tp4056 , necesitas baterías con protección de bajo voltaje , los bms habría sido mejor una mejor elección
 
 Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v)
 
-# Arduino
+## Circuito 
+
+
+
+## Arduino
 
 - Hay que subir el directorio /Data al Spiff del esp32, contiene los *.mp3, se puede poner lo que quieras hasta 1.5mb (reggaton???)
 https://github.com/me-no-dev/arduino-esp32fs-plugin
 
 - Hay que instalar esta librería para el max
+https://github.com/earlephilhower/ESP8266Audio
 
 
-## Funcionamiento
+### Funcionamiento
 
 ```mermaid
 flowchart  TD  
@@ -40,7 +47,7 @@ flowchart  TD
  G --> C
  C --> B
 ```
-## Variables
+### Variables
 
 ```c++
 // config
@@ -55,12 +62,10 @@ const float minVoltage = 0.5;
 int _speed = 255; // velocidad del motor (0-255)
 
 ```
-### 
-
 
 ## Lista de la compra
 
-> **Nota:** no tengo nada que ver con el vendedor, son los enlaces de mi compra.
+> **Nota:** no tengo nada que ver con los vendedores, son los enlaces de mi compra.
 
 1 x DC 6V N20 Mini Micro Metal Gear Motor with Gearwheel DC Motors 30 RPM
 https://www.aliexpress.com/item/33022320164.html
@@ -94,23 +99,24 @@ https://a.aliexpress.com/_vYtC43
 
 2x Battery 18650 with protection
 
-### Other
+### Otros
 
-- 2x 606ZZ 6x17x6mm (gears)
+#### Rodamientos
+2x 606ZZ 6x17x6mm (gears)
 https://www.aliexpress.com/item/1005001826957482.html
 
 2 x 608ZZ 8x22x7mm (rudder)
 https://www.aliexpress.com/item/4001058241232.html
 
+#### Tornilleria
 wooden Self-tapping screw M2x8mm and M2x6mm
 https://www.aliexpress.com/item/1005002336941795.html
 
 18 x Screw M3 x 12mm
 https://www.banggood.com/M3-Bolts-Stainless-Steel-Screws-Button-Head-Socket-Cap-10-Size-p-952124.html
 
-### Tools
-#### drill bit :
-
+### Herramientas
+#### Brocas :
 - 3mm(better 3.1) 
 - 2.8mm (thread) 
 - 2mm

@@ -23,7 +23,7 @@ Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v
 
 ## Circuito 
 
-
+![circuit](doc/bird1_bb.jpg)
 
 ## Arduino
 

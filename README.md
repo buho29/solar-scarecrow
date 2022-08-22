@@ -4,13 +4,20 @@ Hola!
 Para desanimar a los pájaros a usar nuestra huerta como un restaurante buffet-free
 mi segundo intento de ahuyentar de forma not-letal (mi coche muchas veces vive en la calle)
 
+
+![stl](doc/IMG_20220813_203412_edit_273849677569671.jpg)
+
 *Read this in other languages: [English](README.en.md)
 
 # Ficheros 3D
 
+
+https://user-images.githubusercontent.com/47985666/186019331-49d15a59-9388-4942-bd01-0e9cbd2d4d04.mp4
+
+
 los ficheros para imprimir estan en [/stl](/stl).
 
-![stl](doc/doc/bird-exp1.jpg)
+![stl](doc/bird-exp1.jpg)
 
 ![stl](doc/body-exp.jpg)
 
@@ -18,16 +25,18 @@ los ficheros para imprimir estan en [/stl](/stl).
 
 # Hardware
 
-Posiblemente no sea la mejor selección de los materiales...
+Posiblemente no sea la mejor selección de los materiales pero es la que tenia...
 
 ## Suministro electrico
 
-Uso un stepup para alimentar el esp32 y los motores con 6v
-el stepup sube el voltaje 4.2v de las baterias a 6v , con el esp32 en modo sleep (ahoro) el consumo es considerable 18ma (*24h)
+Uso un stepup para alimentar el esp32 y los motores con 6v, el stepup sube el voltaje 4.2v de las baterias a 6v
+
+con el esp32 en modo sleep (ahoro) el consumo real es de 18ma (*24h)
 
 Las 2 placas solares en paralelo bajo el sol me da unos 120ma/h 
 
-Cargo las baterias con un tp4056 , necesitas baterías con protección de bajo voltaje , los bms habría sido mejor una mejor elección
+Cargo las baterias con un tp4056 , 
+necesitas baterías con protección de bajo voltaje , los bms habría sido mejor una mejor elección
 
 Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v)
 
@@ -54,7 +63,7 @@ https://github.com/earlephilhower/ESP8266Audio
 flowchart  TD  
  A[Inicio]  -->  B{Es de dia?}  
  B  -- No --> C[Duerme 10min]  
- B  -- Si --> E{El contador es un numero Par?}
+ B  -- Si --> E{El contador es <br> un numero Par?}
  E -- Si --> F[10seg audio+motor]
  E -- No --> G[10seg solo motor]
  F --> C

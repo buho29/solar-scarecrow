@@ -1,17 +1,20 @@
+
 # Espantapájaros Solar
 
-Hola!   
 Para desanimar a los pájaros a usar nuestra huerta como un restaurante buffet-free
 mi segundo intento de ahuyentar de forma not-letal (mi coche muchas veces vive en la calle)
 
+# Descripción 
+
+- "imita" el aleteo de un pájaro
+- emite sonidos (mp3)
+- solar (queda probar en dias nublados , en autonomia deberia dar para 4 dias)
+- tiene un timón para que el búho gire según la dirección de el viento
+- queda probar si es waterproof , uso una junta de un filamento de tpu de 1.75mm pegada con cyano, la electronica descansa sobre una esponja
 
 ![final](doc/IMG_20220813_203412_edit_273849677569671.jpg)
 
-
-
 https://user-images.githubusercontent.com/47985666/186021702-38a5164b-d2b8-40fa-a175-db5c7b3ff85f.mp4
-
-
 
 *Read this in other languages: [English](README.en.md)
 
@@ -25,6 +28,8 @@ los ficheros para imprimir estan en [/stl](/stl).
 ![stl](doc/bird-exp1.jpg)
 
 ![stl](doc/body-exp.jpg)
+
+
 
 > **Nota:** los ficheros fuentes de Solidworks 2018 3D estan [/solidworks](/solidworks).
 
@@ -161,3 +166,6 @@ https://www.banggood.com/M3-Bolts-Stainless-Steel-Screws-Button-Head-Socket-Cap-
 ![gallery](doc/pcb.png)
 ![gallery](doc/IMG_20220813_211106.jpg)
 ![gallery](doc/IMG_20220804_112254.jpg)
+![gallery](doc/support print3d.png)
+![gallery](doc/IMG_20220802_185002.jpg)
+

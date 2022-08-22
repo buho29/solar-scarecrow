@@ -12,18 +12,21 @@ no es la mejor selección de los materiales pero la presión de mi madre en que 
 ## Suministro electrico
 
 
-- Uso un stepup para alimentar el esp32 y los motores con 6v
+Uso un stepup para alimentar el esp32 y los motores con 6v
 el stepup sube el voltaje 4.2v de las baterias a 6v , con el esp32 en modo sleep (ahoro) el consumo es considerable 18ma (*24h)
 
-- Las 2 placas solares en paralelo bajo el sol me da unos 120ma/h 
-- Cargo las baterias con un tp4056 , necesitas baterías con protección de bajo voltaje , los bms habría sido mejor una mejor elección
+Las 2 placas solares en paralelo bajo el sol me da unos 120ma/h 
+Cargo las baterias con un tp4056 , necesitas baterías con protección de bajo voltaje , los bms habría sido mejor una mejor elección
 
-- Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v)
+Mido la corriente de las placas solares con una divisor de tension (7.2v -> 3.3v)
 
 # Arduino
 
 - Hay que subir el directorio /Data al Spiff del esp32, contiene los *.mp3, se puede poner lo que quieras hasta 1.5mb (reggaton???)
 https://github.com/me-no-dev/arduino-esp32fs-plugin
+
+- Hay que instalar esta librería para el max
+
 
 ## Funcionamiento
 
@@ -31,10 +34,10 @@ https://github.com/me-no-dev/arduino-esp32fs-plugin
 flowchart  TD  
  A[Start]  -->  B{Es de dia?}  
  B  -- No -->  H[Duerme 10min]  
- B  -- Yes --> E[Inicio]
+ B  -- Si --> E[Inicio]
  E --> D{El contador es un numero Par?}
- D -- Yes --> F[Inicia audio+motor]
- D -- No --> G[Inicia solo motor]
+ D -- Si --> F[Inicia audio+motor]
+ D -- Si--> G[Inicia solo motor]
  F --> H 
  G --> H
  H --> B
@@ -43,10 +46,14 @@ flowchart  TD
 
 ```c++
 // config
-const int timeSleep = 60 * 10  * uS_TO_S_FACTOR;// cuando acabe lo mandamos al modo sleep (ahoro de bateria) 10min 
-const int timeRunning = 10 * 1000; // el tiempo que funciona 
-const float volume = 1.5;// el volumen de el audio (max 3.99)
-const float minVoltage = 0.5; //si el voltage es menor lo mandamos al sleep (se supone que es de noche)
+// cuando acabe lo mandamos al modo sleep (ahoro de bateria) 10min 
+const int timeSleep = 60 * 10  * uS_TO_S_FACTOR;
+// el tiempo que funciona audio y el motor (10seg) 
+const int timeRunning = 10 * 1000; 
+// el volumen de el audio (maximo 3.99)
+const float volume = 1.5;
+//si el voltage es menor lo mandamos al sleep (se supone que es de noche)
+const float minVoltage = 0.5; 
 int _speed = 255; // velocidad del motor (0-255)
 
 ```

@@ -1,6 +1,6 @@
 # Espantapajaros/Solar scarecrow
 
-Hi! con mi eterna pelea con los pájaros de forma friendly (mi coche muchas veces vive fuera) para desanimar a usar nuestra huerta de buffet free
+Hi! con mi eterna pelea con los pájaros de forma not-letal (mi coche muchas veces vive fuera) para desanimar a usar nuestra huerta de buffet-free
 
 *Read this in other languages: [English](README.en.md)
 
@@ -17,9 +17,15 @@ cargo las baterias con un
 
 mido la corriente de las placas solares con una divisor de tension ()
 
+# harduino
+
+Hay que subir los mp3
+
+https://github.com/me-no-dev/arduino-esp32fs-plugin
+
 # Lista de la compra
 
-> **Note:** no tengo nada que ver con el vendedor, son enlaces de mi compra.
+> **Nota:** no tengo nada que ver con el vendedor, son los enlaces de mi compra.
 
 1 x DC 6V N20 Mini Micro Metal Gear Motor with Gearwheel DC Motors 30 RPM
 https://www.aliexpress.com/item/33022320164.html

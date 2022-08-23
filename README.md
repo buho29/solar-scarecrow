@@ -4,7 +4,7 @@
 Para desanimar a los pájaros a usar nuestra huerta como un restaurante buffet-free
 mi segundo intento de ahuyentar de forma not-letal (mi coche muchas veces vive en la calle)
 
-# Descripción 
+### Descripción 
 
 - "imita" el aleteo de un pájaro
 - emite sonidos (mp3)
